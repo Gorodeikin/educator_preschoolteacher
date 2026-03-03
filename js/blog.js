@@ -1,33 +1,112 @@
-const articleModal = document.getElementById('articleModal');
-const articleTitle = document.getElementById('articleTitle');
-const articleBody = document.getElementById('articleBody');
-const articleImage = document.getElementById('articleImage');
-const articleClose = document.querySelector('.article-close');
+const articleContent = {
+  'book-magic': {
+    title: "Чарівна сила книги у розвитку дошкільників",
+    image: "./images/blog/photo_2026-03-01_19-20-31.jpg",
+    text: `
+      <div class="article-meta>
+        <p><strong>Анотація:</strong> У статті висвітлюються теоретичні методи використання книжок для розвитку дошкільників та покращення психологічних процесів.</p>
+        <p><strong>Ключові слова:</strong> дошкільнята, мовлення, книга, батьки, художня література.</p>
+      </div>
 
-document.querySelectorAll('.read-more').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.preventDefault();
+      <h3>Вступ. Актуальність</h3>
+      <p>Сьогодні дорослих все більше цікавлять комп'ютерні технології, а    читання для дітей замінюється переглядом телепередач. За результатами опитування, лише 17% батьків дошкільнят беруть участь у формуванні читацької культури своїх дітей, 60% не читають дітям зовсім.</p>
+      <p>Дитина-дошкільник є своєрідним читачем. Насправді це слухач, чия зустріч з книгою повністю визначається дорослою людиною. Від дорослого в великій мірі залежить i те, чи стане дитина справжнім, захопленим читачем.</p>
 
-    articleTitle.textContent = btn.dataset.title;
-    articleBody.innerHTML = btn.dataset.article;
-    articleImage.src = btn.dataset.image;
+      <h3>Вікові можливості дітей</h3>
+      <ul>
+        <li><strong>До 2 років:</strong> Слухають короткі римовані тексти, грають в забавлянки. У 1-1.5 роки вже можуть самі принести книжку.</li>
+        <li><strong>До 3 років:</strong> Отримують втіху від власного мовлення, люблять називати знайомі малюнки, "читають" книжки лялькам.</li>
+        <li><strong>4-5 років:</strong> Розуміють, що читати треба зліва направо, впізнають певні літери, описують прості дії.</li>
+        <li><strong>До 6 років:</strong> Починають самостійно читати окремі слова, ініціюють написання власних історій.</li>
+      </ul>
 
-    articleModal.style.display = 'flex';
-  });
-});
+      <h3>Естетичне навантаження ілюстрацій</h3>
+      <p>Ілюстрації мають збуджувати уяву дитини, формувати відчуття кольору та гармонії. Доведено, що діти інтуїтивно тягнуться до прекрасного. Одну книжку дитина щовечора ховає під подушку, бо їй "подобаються картинки", іншу — неможливо примусити навіть роздивлятися.</p>
 
-articleClose.addEventListener('click', () => {
-  articleModal.style.display = 'none';
-});
+      <h3>Висновок</h3>
+      <p>Досвід світової цивілізації показує, що без читання немає особистості. Книга — це інструмент, який допомагає сформувати етичні принципи, розвинути фантазію та навчити думати.</p>
+      <p><em>Книгу замінити нічим не можна. Незважаючи на новітні відкриття, не будемо поспішати розлучатися з книгою.</em></p>
+    `
+  },
 
-window.addEventListener('click', e => {
-  if (e.target === articleModal) {
-    articleModal.style.display = 'none';
+  'online-magic': {
+    title: "Магія онлайн-садочка",
+    image: "./images/blog/photo_2026-03-01_19-21-02.jpg",
+    text: `
+      <div class="article-meta">
+        <p>Онлайн-заняття — це не просто екран, а активний розвиток та комфортне навчання у цифровому світі.</p>
+      </div>
+
+      <h3>Як проходять заняття?</h3>
+      <p>Навчання проводиться у невеликих групах з використанням ігрових сюжетів. Тривалість відповідає віковим нормам, щоб дитина зберігала інтерес i не перевтомлювалася.</p>
+            
+      <ul>
+        <li><strong>Інтерактив:</strong> Діти активно відповідають, рухаються та виконують завдання.</li>
+        <li><strong>Матеріали:</strong> Яскраві презентації, відео та казкові сюжети.</li>
+        <li><strong>Активність:</strong> Обов'язкові руханки та пальчикові ігри.</li>
+      </ul>
+
+      <h3>Що ми розвиваємо?</h3>
+      <p>Завдяки системним заняттям дитина вдосконалює мовлення, логічне мислення, увагу та пам'ять. Це чудовий спосіб розвинути впевненість у собі та підготуватися до майбутнього навчання.</p>
+
+      <h3>Переваги для сім'ї</h3>
+      <p>Комфортна домашня атмосфера, відсутність стресу від дороги та можливість системно підтримувати розвиток дитини за будь-яких умов.</p>
+            
+      <p><em>Онлайн-формат — це безпека, професійний підхід та збереження любові до навчання з раннього віку.</em></p>
+    `
+  },
+
+  'teacher-role': {
+    title: "Роль вихователя у розвитку дитини",
+    image: "./images/blog/photo_2026-03-01_19-21-31.jpg", // Перевірте шлях до файлу
+    text: `
+      <div class="article-meta">
+        <p>Вихователь — це фундамент, на якому будується характер, самооцінка та ставлення дитини до світу.</p>
+      </div>
+
+      <h3>Більше ніж педагог</h3>
+      <p>Сучасний вихователь не лише навчає рахувати, а й створює атмосферу безпеки. Це дорослий, який допомагає малюку повірити у власні сили та вчить взаємодіяти з іншими.</p>
+        
+      <ul>
+        <li><strong>Емоційна підтримка:</strong> Формування здорової самооцінки через доброзичливе слово.</li>
+        <li><strong>Розвиток сміливості:</strong> Коли дитина не боїться помилок, вона легше навчається та пробує нове.</li>
+        <li><strong>Соціалізація:</strong> Навчання спілкуванню з однолітками та відкритості до світу.</li>
+      </ul>
+
+      <h3>Партнерство з батьками</h3>
+      <p>Ефективне виховання — це спільна робота. Вихователь стає партнером для родини, допомагаючи краще зрозуміти потреби дитини та створити стабільний простір для її зростання.</p>
+        
+      <p><em>Спільна віра дорослих у дитину робить її зростання впевненим та щасливим.</em></p>
+    `
   }
-});
+};
 
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    articleModal.style.display = 'none';
-  }
-});
+function openArticle(id) {
+    const modal = document.getElementById('articleModal');
+    const body = document.getElementById('articleBody');
+    const content = articleContent[id];
+
+    if (content) {
+        body.innerHTML = `
+            <button class="close-article-top" onclick="closeArticleModal()">&times;</button>
+
+            <div class="modal-scroll-container">
+              <img src="${content.image}" alt="${content.title}"    class="modal-article-img">
+            
+              <div class="article-text-wrapper">
+                <h2 class="modal-article-title">${content.title}</h2>
+                <div class="article-inner-text">
+                    ${content.text}
+                </div>
+              </div>
+            </div>
+        `;
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+    }
+}
+
+function closeArticleModal() {
+    document.getElementById('articleModal').style.display = "none";
+    document.body.style.overflow = "auto";
+}

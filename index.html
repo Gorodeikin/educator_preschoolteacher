@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="alternate" hreflang="it" href="index-it.html" />
 </head>
 
 <body>
@@ -28,11 +27,6 @@
                     <li><a href="#contact">Контакти</a></li>
                 </ul>
             </nav>
-            <!--
-            <div class="language-switcher">
-                <a href="#" class="active">UA</a> | <a href="index-it.html">IT</a>
-            </div>
-        -->
         </div>
     </header>
 
@@ -47,9 +41,9 @@
                 </h1>
 
                 <div class="bio-info">
-                    <p><strong>Вихователь:</strong> Анна Сергіївна Щепак</p>
-                    <p><strong>Педагогічний стаж:</strong> 15 років</p>
-                    <p>
+                    <p class="bio-text"><strong>Вихователь:</strong> Анна Сергіївна Щепак</p>
+                    <p class="bio-text"><strong>Педагогічний стаж:</strong> 15 років</p>
+                    <p class="bio-text">
                         <strong>Кваліфікаційна категорія:</strong> спеціаліст I категорії
                     </p>
                 </div>
@@ -59,41 +53,41 @@
         <!-- EDUCATION -->
         <section id="education" class="section light-bg">
             <div class="container">
-                <h2>Моя Освiта</h2>
+                <h2 class="education-title">Моя Освiта</h2>
                 <div class="education-basic">
-                    <h3>Базова освіта</h3>
-                    <div class="edu-item">
-                        <p>Херсоньский державній універсітет</p>
-                        <p>Спеціальність: Філологія</p>
+                    <h3 class="education-subtitle">Базова освіта</h3>
+                    <div class="education-item">
+                        <p class="education-text">Херсонcький державний університет</p>
+                        <p class="education-text">Спеціальність: Філологія</p>
                         <div class="diplomas">
-                            <img src="./images/education/diplom/magistr.webp" alt="Диплом магистр" width="360" />
+                            <img src="./images/education/diplom/magistr.webp" alt="Диплом магістра" width="360" />
                         </div>
                     </div>
 
-                    <div class="edu-item">
-                        <p>Херсоньский державній універсітет</p>
-                        <p>Спеціальність: Дошкільне виховання</p>
+                    <div class="education-item">
+                        <p class="education-text">Херсонський державний університет</p>
+                        <p class="education-text">Спеціальність: Дошкільне виховання</p>
                         <div class="diplomas">
-                            <img src="./images/education/diplom/specialista1.webp" alt="Диплом специалиста"
+                            <img src="./images/education/diplom/specialista1.webp" alt="Диплом спеціаліста"
                                 width="360" />
-                            <img src="./images/education/diplom/specialista2.webp" alt="Диплом специалиста"
+                            <img src="./images/education/diplom/specialista2.webp" alt="Диплом спеціаліста"
                                 width="360" />
                         </div>
                     </div>
                 </div>
 
                 <div class="education-qualification">
-                    <h3>Пидвищення квалификации</h3>
-                    <div class="edu-item">
+                    <h3 class="education-subtitle">Підвищення кваліфікації</h3>
+                    <div class="education-item">
                         <div class="diplomas">
-                            <img src="./images/education/qualification/qualification.jpg" alt="Диплом бакалавра"
+                            <img src="./images/education/qualification/qualification.jpg" alt="Свідоцтво підвищення кваліфікації"
                                 width="360" />
                         </div>
                     </div>
                 </div>
 
                 <div class="self-development">
-                    <h3>Само освита</h3>
+                    <h3 class="self-title education-subtitle">Самоосвита</h3>
                     <div class="gallery-photo">
                         <img src="./images/education/certificate/certificate-1.jpg" alt="Сертифікат" width="180" />
                         <img src="./images/education/certificate/certificate-2.jpg" alt="Сертифікат" width="180" />
@@ -110,17 +104,16 @@
                         <img src="./images/education/certificate/certificate-13.jpg" alt="Сертифікат" width="180" />
                         <img src="./images/education/certificate/certificate-14.jpg" alt="Сертифікат" width="180" />
                         <img src="./images/education/certificate/certificate-15.jpg" alt="Сертифікат" width="180" />
-                        <img src="./images/education/certificate/certificate-15.jpg" alt="Сертифікат" width="180" />
                         <img src="./images/education/certificate/certificate-16.jpg" alt="Сертифікат" width="180" />
                         <img src="./images/education/certificate/certificate-17.jpg" alt="Сертифікат" width="180" />
                         <img src="./images/education/certificate/certificate-18.jpg" alt="Сертифікат" width="180" />
                         <img src="./images/education/certificate/certificate-19.jpg" alt="Сертифікат" width="180" />
+                        <img src="./images/education/certificate/certificate-20.webp" alt="Сертифікат" width="180" />
+                        <img src="./images/education/certificate/certificate-21.webp" alt="Сертифікат" width="180" />
+                        <img src="./images/education/certificate/certificate-22.webp" alt="Сертифікат" width="180" />
+                        <img src="./images/education/certificate/certificate-23.webp" alt="Сертифікат" width="180" />
+                        <img src="./images/education/certificate/certificate-24.webp" alt="Сертифікат" width="180" />
 
-                    </div>
-                    <div class="gallery-pagination">
-                        <button id="prev-page">← Назад</button>
-                        <span id="page-info"></span>
-                        <button id="next-page">Вперёд →</button>
                     </div>
                 </div>
             </div>
@@ -129,12 +122,11 @@
         <!-- ONLINE LESSONS -->
         <section id="online-lessons" class="section">
             <div class="container">
-                <h2>Робота з дитьми</h2>
+                <h2 class="online-lessons-title">Робота з дітьми</h2>
 
                 <!-- Відео-заняття -->
-
-                <div class="video-gallery-container">
-                    <h3>Відео-заняття для дітей</h3>
+                <div class="video-lessons">
+                    <h3 class="video-lessons-title">Відео-заняття для дітей</h3>
                     <div class="video-gallery">
                         <div class="video-item" data-video-id="o8KjzSDeJe4">
                             <img src="https://img.youtube.com/vi/o8KjzSDeJe4/hqdefault.jpg" alt="" />
@@ -217,32 +209,69 @@
                             </span>
                         </div>
                     </div>
-                    <div class="video-pagination">
-                        <button class="prev-page">← Назад</button>
-                        <span class="page-info"></span>
-                        <button class="next-page">Вперед →</button>
-                    </div>
                 </div>
 
-                <div class="block interactive-materials">
-                    <h3>Презентації та інтерактивні ігри</h3>
-                    <h4>PowerPoint-презентації</h4>
+                <div class="interactive-materials">
+                    <h3 class="interactive-materials-title">Презентації та інтерактивні ігри</h3>
+                    <h4 class="interactive-materials-subtitle">PowerPoint-презентації</h4>
                     <div class="presentation-container">
-                        <div class="presentation-item">
-                            <iframe
-                                src="https://docs.google.com/presentation/d/e/2PACX-1vQIdrPs_Xckrlu9nZnAmY4ZboGQVP5fA_7Uecm7iEu02WWExpicKleJjxI1fmMkmg/embed?start=true&loop=true&delayms=3000"
-                                frameborder="0" width="100%" height="565" allowfullscreen="true"
-                                mozallowfullscreen="true" webkitallowfullscreen="true">
-                            </iframe>
+                        <div class="presentation-item"
+                            data-src="https://docs.google.com/presentation/d/e/2PACX-1vQIdrPs_Xckrlu9nZnAmY4ZboGQVP5fA_7Uecm7iEu02WWExpicKleJjxI1fmMkmg/embed?start=true">
+                            <div class="pres-preview">
+                                <img src="./images/onlineLessons/presentation/1.png"
+                                    alt="Прев'ю презентації">
+                                <div class="pres-overlay"><span>Відкрити презентацію</span></div>
+                            </div>
+                        </div>
+                        <div class="presentation-item"
+                            data-src="https://docs.google.com/presentation/d/e/2PACX-1vR9XhxJZ3JGZY3Xbwo6qx_jxfzvr8MFVpLBed5NnGiyFC0W46v_WnhfNy3rrsr4AQ/embed?start=true&loop=true&delayms=3000">
+                            <div class="pres-preview">
+                                <img src="./images/onlineLessons/presentation/2.png" alt="Прев'ю презентації">
+                                <div class="pres-overlay"><span>Відкрити презентацію</span></div>
+                            </div>
+                        </div>
+                        <div class="presentation-item"
+                            data-src="https://docs.google.com/presentation/d/e/2PACX-1vRknwlF4s2AIg2UqX5jf9QjfoRYGnMRcgr2XFz6hMMMxsTqjp75kiyPO1MTFPSjEw/embed?start=true&loop=true&delayms=3000">
+                            <div class="pres-preview">
+                                <img src="./images/onlineLessons/presentation/3.png" alt="Прев'ю презентації">
+                                <div class="pres-overlay"><span>Відкрити презентацію</span></div>
+                            </div>
+                        </div>
+                        <div class="presentation-item"
+                            data-src="https://docs.google.com/presentation/d/e/2PACX-1vTy3WnKsjfB_sVv6MvvHTZnnF5dPfa1BWjZ80cbgqw3zfF1kRAY3QzGNggxRJd5Lw/embed?start=true&loop=true&delayms=3000">
+                            <div class="pres-preview">
+                                <img src="./images/onlineLessons/presentation/4.png" alt="Прев'ю презентації">
+                                <div class="pres-overlay"><span>Відкрити презентацію</span></div>
+                            </div>
+                        </div>
+                        <div class="presentation-item"
+                            data-src="https://docs.google.com/presentation/d/e/2PACX-1vQ5OM2pyynq3KDUYF5pPSjs_KxP-ygxtTS1RXpjavT20aVSe22t8VbPOEzeyLk8OA/embed?start=true&loop=true&delayms=3000">
+                            <div class="pres-preview">
+                                <img src="./images/onlineLessons/presentation/5.png" alt="Прев'ю презентації">
+                                <div class="pres-overlay"><span>Відкрити презентацію</span></div>
+                            </div>
+                        </div>
+                        <div class="presentation-item"
+                            data-src="https://docs.google.com/presentation/d/e/2PACX-1vSj7GKZqR1dvdiQ4JM-iCYPX5r03kfjfII79Uve4309PrnyOCjq001P4F67SFFOOw/embed?start=true&loop=true&delayms=3000">
+                            <div class="pres-preview">
+                                <img src="./images/onlineLessons/presentation/6.png" alt="Прев'ю презентації">
+                                <div class="pres-overlay"><span>Відкрити презентацію</span></div>
+                            </div>
                         </div>
                     </div>
                     <h4>Інтерактивні ігри</h4>
                     <div class="games-gallery">
                         <img src="./images/games.webp" alt="Інтерактивні ігри">
-
+                        <ul class="games-list">
+                            <li class="games-item">
+                                <a class="games-link" href="https://arcade.padlet.com/library">Padlet <span>arcade</span></a>
+                            </li>
+                            <li class="games-item">
+                                <a class="games-link" href="https://wordwall.net/it/myactivities">Wordwall</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 
@@ -281,23 +310,11 @@
                             <img src="./images/feedback/24.webp" alt="" width="180">
                             <img src="./images/feedback/25.webp" alt="" width="180">
                         </div>
-
                     </div>
-                    <!-- <div class="item contests">
-                        <h3>Участь у конкурсах</h3>
-                        <div class="diploma-gallery"></div>
-                    </div>-->
+
                     <div class="item parents-events">
                         <h3>Робота з батьками</h3>
-                        <div class="video-gallery">
-                            <div class="video-item" data-video-id="cSUTrl5_t1E">
-                                <img src="https://img.youtube.com/vi/cSUTrl5_t1E/hqdefault.jpg" alt="" />
-                                <span class="play-icon">
-                                    <svg class="play-svg-icon">
-                                        <use href="./images/icons.svg#icon-youtube1"></use>
-                                    </svg>
-                                </span>
-                            </div>
+                        <div class="video-gallery parrents-gallery">
                             <div class="video-item" data-video-id="mk2OZKmUTNI">
                                 <img src="https://img.youtube.com/vi/mk2OZKmUTNI/hqdefault.jpg" alt="" />
                                 <span class="play-icon">
@@ -325,6 +342,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="item children-holidays">
                         <h3>Свята та заходи</h3>
                         <div class="video-gallery">
@@ -336,7 +354,6 @@
                                     </svg>
                                 </span>
                             </div>
-
                             <div class="video-item" data-video-id="_z45cJKZGII">
                                 <img src="https://img.youtube.com/vi/_z45cJKZGII/hqdefault.jpg" alt="Відео-заняття" />
                                 <span class="play-icon">
@@ -345,7 +362,6 @@
                                     </svg>
                                 </span>
                             </div>
-
                             <div class="video-item" data-video-id="WpN08ml_Fok">
                                 <img src="https://img.youtube.com/vi/WpN08ml_Fok/hqdefault.jpg" alt="Відео-заняття" />
                                 <span class="play-icon">
@@ -354,7 +370,6 @@
                                     </svg>
                                 </span>
                             </div>
-
                             <div class="video-item" data-video-id="NY5UzhCI3w4">
                                 <img src="https://img.youtube.com/vi/NY5UzhCI3w4/hqdefault.jpg" alt="Відео-заняття" />
                                 <span class="play-icon">
@@ -372,15 +387,28 @@
         <section id="professional-activity" class="section">
             <div class="container">
                 <h2>Професійна діяльність</h2>
-
                 <div class="activity-blocks">
                     <div class="block miniprojects">
                         <h3>Дослідницькі мініпроєкти</h3>
-                        <div class="report-gallery"></div>
+                        <div class="gallery-photo miniprojects-gallery">
+                            <img src="./images/professionalactivity/1.webp" alt="">
+                            <img src="./images/professionalactivity/2.webp" alt="">
+                            <img src="./images/professionalactivity/3.webp" alt="">
+                            <img src="./images/professionalactivity/4.webp" alt="">
+                        </div>
                     </div>
                     <div class="block self-education">
                         <h3>Обмiн досвiдом</h3>
-                        <div class="certificates-gallery"></div>
+                        <div class="certificates-gallery">
+                            <div class="video-item" data-video-id="RH9Dpn_FS48">
+                                <img src="https://img.youtube.com/vi/RH9Dpn_FS48/hqdefault.jpg" alt="Магія навчання грамоти" />
+                                <span class="play-icon">
+                                    <svg class="play-svg-icon">
+                                        <use href="./images/icons.svg#icon-youtube1"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -392,13 +420,42 @@
                 <h2>Досягнення</h2>
 
                 <div class="achievement-block author-materials">
-                    <h3>Мои досягнення</h3>
-                    <div class="material-previews"></div>
+                    <h3>Мої досягнення</h3>
+                    <div class="gallery-photo">
+                        <img src="./images/authorMaterials/1.webp" alt="">
+                        <img src="./images/authorMaterials/2.webp" alt="">
+                        <img src="./images/authorMaterials/3.webp" alt="">
+                        <img src="./images/authorMaterials/4.webp" alt="">
+                        <img src="./images/authorMaterials/16.webp" alt="">
+                        <img src="./images/authorMaterials/17.webp" alt="">
+                        <img src="./images/authorMaterials/18.webp" alt="">
+                        <img src="./images/authorMaterials/19.webp" alt="">
+                        <img src="./images/authorMaterials/20.webp" alt="">
+                        <img src="./images/authorMaterials/21.webp" alt="">
+                        <img src="./images/authorMaterials/22.webp" alt="">
+                        <img src="./images/authorMaterials/23.webp" alt="">
+                        <img src="./images/authorMaterials/24.webp" alt="">
+                        <img src="./images/authorMaterials/25.webp" alt="">
+                        <img src="./images/authorMaterials/26.webp" alt="">
+                        <img src="./images/authorMaterials/27.webp" alt="">
+                        <img src="./images/authorMaterials/28.webp" alt="">
+                    </div>
                 </div>
                 <div class="achievement-block testimonials">
-                    <h3>Досягнення моих дитей</h3>
+                    <h3>Досягнення моїх дітей</h3>
                     <div class="testimonial-quotes"></div>
-                    <div class="thanks-photos"></div>
+                    <div class="gallery-photo">
+                        <img src="./images/authorMaterials/6.webp" alt="">
+                        <img src="./images/authorMaterials/7.webp" alt="">
+                        <img src="./images/authorMaterials/8.webp" alt="">
+                        <img src="./images/authorMaterials/9.webp" alt="">
+                        <img src="./images/authorMaterials/10.webp" alt="">
+                        <img src="./images/authorMaterials/11.webp" alt="">
+                        <img src="./images/authorMaterials/12.webp" alt="">
+                        <img src="./images/authorMaterials/13.webp" alt="">
+                        <img src="./images/authorMaterials/14.webp" alt="">
+                        <img src="./images/authorMaterials/15.webp" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -409,31 +466,33 @@
                 <div class="blog-list">
                     <!-- Стаття 1 -->
                     <article class="blog-post">
-                        <img src="./images/igryi-dlya-detey.jpg" alt="Гра дітей" />
-                        <h4>Роль гри у розвитку дитини дошкільного віку</h4>
-                        <p>
-                            Гра — це не лише розвага. Через неї дитина пізнає світ, розвиває
-                            уяву та навички спілкування...
-                        </p>
-                        <a href="#" class="read-more" data-title="Роль гри у розвитку дитини дошкільного віку"
-                            data-image="./images/igryi-dlya-detey.jpg" data-article="
-                    <p>Гра є провідною діяльністю дитини дошкільного віку.</p>
-                    <p>Саме через гру дитина пізнає світ, вчиться взаємодіяти з іншими та розвиває мислення.</p>
-                    <p>Педагог має створювати умови для вільної творчої гри.</p>
-                ">
-                            Читати далі
-                        </a>
+                        <img src="./images/blog/photo_2026-03-01_19-20-31.jpg" alt="Чарівна сила книги" />
+                        <div class="blog-post-content">
+                            <h3 class="blog-title">Чарівна сила книги</h3>
+                            <p class="blog-text">О неоценимом значении книги для развития интеллекта и личности ребенка...</p>
+                            <button class="read-more" onclick="openArticle('book-magic')">Читати далі</button>
+                        </div>
                     </article>
 
                     <!-- Стаття 2 -->
                     <article class="blog-post">
-                        <img src="./images/children-reading.jpg" alt="Діти читають" />
-                        <h4>Як виховати любов до читання з дитинства</h4>
-                        <p>
-                            Читання з малюком створює особливий зв’язок, розвиває мовлення
-                            та формує інтерес до знань...
-                        </p>
-                        <a href="#" class="read-more">Читати далі</a>
+                        <img src="./images/blog/photo_2026-03-01_19-21-02.jpg" alt="Онлайн-навчання" />
+                        <div class="blog-post-content">
+                            <h3 class="blog-title">Магія онлайн-садочка</h3>
+                            <p class="blog-text">Чому онлайн-формат — це не просто екран, а активний розвиток та комфорт для дитини...</p>
+                            <button class="read-more" onclick="openArticle('online-magic')">Читати далі</button>
+                        </div>
+                    </article>
+
+                    <!-- Стаття 2 -->
+                    <article class="blog-post">
+                        <img src="./images/blog/photo_2026-03-01_19-21-31.jpg" alt="Чарівна сила книги" />
+                        <div class="blog-post-content">
+                            <h3 class="blog-title">Роль вихователя у розвитку дитини</h3>
+                            <p class="blog-text">Як вихователь допомагає дитині повірити у власні сили, створити атмосферу безпеки та стати фундаментом для щасливого
+                            майбутнього...</p>
+                            <button class="read-more" onclick="openArticle('teacher-role')">Читати далі</button>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -442,21 +501,13 @@
         <section id="contact" class="section light-bg">
             <div class="container contact-content">
                 <h2>Контакти</h2>
-                <!--  
-                <form action="submit_form.php" method="POST" class="contact-form">
-                    <input type="text" name="name" placeholder="Ваше ім'я" required>
-                    <input type="email" name="email" placeholder="Ваш Email" required>
-                    <textarea name="message" placeholder="Ваше повідомлення" rows="5" required></textarea>
-                    <button type="submit" class="btn primary-btn">Надіслати повідомлення</button>
-                </form>
-            -->
                 <div class="contacts-links">
                     <a href="mailto:annaschepak@gmail.com" class="contacts-link email">
                         <svg class="contacts-icon gmail">
                             <use href="./images/icons.svg#icon-google-gmail1"></use>
                         </svg>
                     </a>
-                    <a href="https://t.me/@Anna_Shchepak" target="_blank" class="contacts-link telegram">
+                    <a href="https://t.me/Anna_Shchepak" target="_blank" class="contacts-link telegram">
                         <svg class="contacts-icon">
                             <use href="./images/icons.svg#icon-telegram1"></use>
                         </svg>
@@ -469,6 +520,7 @@
                 </div>
             </div>
         </section>
+
         <!-- MODALS -->
         <div id="imageModal" class="modal">
             <span class="close">&times;</span>
@@ -482,6 +534,12 @@
             <div class="video-modal-content">
                 <span class="video-close">&times;</span>
                 <div class="video-wrapper" id="videoContainer"></div>
+            </div>
+        </div>
+
+        <div id="articleModal" class="modal">
+            <div class="modal-content-article">
+                <div id="articleBody"></div>
             </div>
         </div>
     </main>
@@ -521,6 +579,7 @@
     </footer>
     <script src="./js/gallery.js"></script>
     <script src="./js/blog.js"></script>
+    <script src="./js/presentations.js"></script>
 </body>
 
 </html>

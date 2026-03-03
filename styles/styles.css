@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* ==================CSS Reset ===============*/
 li {
   list-style: none;
 }
@@ -6,20 +6,17 @@ a {
   text-decoration: none;
 }
 
-/* Вказуємо box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Усуваємо внутрішні відступи */
 ul[class],
 ol[class] {
   padding: 0;
 }
 
-/* Усуваємо зовнішні відступи */
 body,
 h1,
 h2,
@@ -39,7 +36,6 @@ dd {
   margin: 0;
 }
 
-/* Виставляємо основні налаштування за замовчуванням для body */
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -47,18 +43,15 @@ body {
   line-height: 1.5;
 }
 
-/* Видаляємо стандартну стилізацію для всіх ul та il, у яких є атрибут class*/
 ul[class],
 ol[class] {
   list-style: none;
 }
 
-/* Елементи a, які не мають класу, скидаємо до дефолтних стилів */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Спрощуємо роботу із зображеннями */
 img,
 picture {
   max-width: 100%;
@@ -66,12 +59,10 @@ picture {
   height: auto;
 }
 
-/* Вказуємо зрозумілу періодичність у потоці даних у article*/
 article > * + * {
   margin-top: 1em;
 }
 
-/* Наслідуємо шрифти для інпутів та кнопок */
 input,
 button,
 textarea,
@@ -79,29 +70,12 @@ select {
   font: inherit;
 }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
+/* ==============================================*/
 
-/* Видаляємо всі анімації та переходи для людей, які вважають за краще їх не використовувати */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 html {
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -112,10 +86,9 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f8f8f8; /* Легкий фон */
+  background-color: #f8f8f8;
 }
 
-/* Обмеження ширини контенту */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -127,14 +100,9 @@ h1,
 h2,
 h3,
 h4 {
-  color: #007bff; /* Основний акцентний колір (синій) */
+  color: #007bff;
   margin-bottom: 15px;
-}
-
-h2 {
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 40px;
 }
 
 a {
@@ -145,49 +113,6 @@ a {
 
 a:hover {
   color: #0056b3;
-}
-
-/* Стилізація кнопок */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 10px 0;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-align: center;
-}
-
-.primary-btn {
-  background-color: #007bff; /* Основна дія */
-  color: white;
-  border: 2px solid #007bff;
-}
-
-.primary-btn:hover {
-  background-color: #0056b3;
-}
-
-.secondary-btn {
-  background-color: #e9e9e9; /* Додаткова дія */
-  color: #333;
-  border: 2px solid #ccc;
-}
-
-.secondary-btn:hover {
-  background-color: #ccc;
-}
-
-.download-btn {
-  background-color: #28a745; /* Зелений для завантаження */
-  color: white;
-  border: 2px solid #28a745;
-}
-
-.download-btn:hover {
-  background-color: #1e7e34;
 }
 
 /* Стилізація секцій */
@@ -202,7 +127,7 @@ a:hover {
 #header {
   position: sticky;
   background-color: #333;
-  justify-content: center; /* щоб меню стояло посередині */
+  justify-content: center;
   align-items: center;
 }
 
@@ -215,7 +140,7 @@ a:hover {
 
 .main-nav-list {
   display: flex;
-  gap: 30px; /* проміжки між пунктами */
+  gap: 30px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -242,9 +167,9 @@ a:hover {
   color: #ff6f61;
 }
 
-/* 🏠 Про мене */
+/* ==== ABOUT ====*/
 #about {
-  background-color: #f3e5ab; /* Світло-блакитний фон для першої секції */
+  background-color: #f3e5ab;
   padding: 80px 0;
   text-align: center;
 }
@@ -278,21 +203,125 @@ a:hover {
   line-height: 1.8;
 }
 
-/* 📚 Онлайн-заняття */
-#online-lessons .lesson-blocks {
+.bio-text {
+}
+
+/*======= EDUCATION ========= */
+.eduucation-title {
+  font-size: 20px;
+}
+.education-basic {
+}
+.education-subtitle {
+}
+.education-item {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.education-text {
+}
+
+.diplomas {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-#online-lessons .block {
-  flex: 1 1 100%; /* на всю ширину */
-  padding: 25px;
-  background-color: #fff;
+.diplomas img {
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
 }
 
+.diplomas img:hover {
+  transform: scale(1.05);
+}
+
+/* ========== ONLINE LESSONS =========== */
+.online-lessons-title {
+}
+.video-lessons-title {
+}
+.interactive-materials {
+  padding-bottom: 30px;
+}
+.presentation-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.presentation-item {
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ddd;
+  transition: transform 0.3s;
+}
+
+.presentation-item:hover {
+  transform: translateY(-5px);
+}
+
+.pres-preview img {
+  width: 100%;
+  display: block;
+}
+
+.pres-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: white;
+  font-weight: bold;
+}
+
+.presentation-item:hover .pres-overlay {
+  opacity: 1;
+}
+
+.games-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.games-item {
+  font-size: 20px;
+}
+
+.games-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Ваш синій колір */
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.games-link span {
+  text-transform: uppercase;
+}
+/* === Video-Gallery ===*/
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
 .video-item {
   position: relative;
   cursor: pointer;
@@ -303,8 +332,25 @@ a:hover {
 .video-item img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   object-fit: cover;
   display: block;
+}
+
+.play-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.play-svg-icon {
+  width: 60px;
 }
 
 /* 👩‍👧‍👦 Співпраця */
@@ -337,9 +383,9 @@ a:hover {
 /* Освита */
 .diplomas {
   display: flex;
-  gap: 16px; /* расстояние между дипломами */
-  justify-content: center; /* выравнивание по центру (можно left/right) */
-  flex-wrap: wrap; /* чтобы на узких экранах переносились */
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 
@@ -363,11 +409,10 @@ a:hover {
 .gallery-photo img {
   width: 100%;
   height: 250px;
-  object-fit: cover; /* Изображение масштабируется, чтобы заполнить область, лишнее обрезается */
-  border-radius: 12px; /* Скругленные углы */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  /* Плавный переход для эффектов при наведении */
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
@@ -471,6 +516,9 @@ a:hover {
 }
 
 .blog-post {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -480,6 +528,12 @@ a:hover {
 
 .blog-post:hover {
   transform: translateY(-5px);
+}
+
+.blog-post-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .blog-post img {
@@ -498,21 +552,27 @@ a:hover {
   padding: 0 15px 15px;
   color: #666;
   line-height: 1.6;
+  flex-grow: 1;
 }
 
 .read-more {
   display: block;
-  text-align: center;
-  padding: 12px;
-  background: goldenrod;
+  width: 100%;
+  padding: 12px 0;
+
+  background-color: #e2b13a;
   color: #fff;
-  text-decoration: none;
+  text-align: center;
   font-weight: bold;
-  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s aese;
+  margin-top: auto;
+  text-transform: none;
 }
 
 .read-more:hover {
-  background: darkgoldenrod;
+  background-color: #c99a2e;
 }
 
 /* 📩 Контакти */
@@ -679,94 +739,169 @@ a:hover {
 }
 
 /* ===== MODAL ===== */
-
 .video-modal {
-  display: none;
+  display: none; /* Ховаємо за замовчуванням */
   position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  inset: 0; /* Розтягуємо на весь екран */
+  background: rgba(0, 0, 0, 0.9); /* Глибокий темний фон */
+  backdrop-filter: blur(8px); /* Розмиття заднього плану для фокусу */
   z-index: 3000;
+
+  /* Центрування вмісту за допомогою Flexbox */
   align-items: center;
   justify-content: center;
+  padding: 20px; /* Відступи від країв екрану на мобільних */
 }
 
+/* Контейнер, що обмежує розмір */
 .video-modal-content {
-  width: 90%;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1400px; /* Максимальна ширина на великих моніторах */
   position: relative;
+  background: #000;
+  border-radius: 12px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  overflow: visible; /* Щоб хрестик було видно зверху */
 }
 
+/* Обертка 16:9 для адаптивності */
 .video-wrapper {
   position: relative;
-  padding-top: 56.25%; /* 16:9 */
+  width: 100%;
+  padding-top: 56.25%; /* Співвідношення сторін 16:9 */
+  height: 0;
 }
 
 .video-wrapper iframe {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   border: none;
+  border-radius: 8px;
 }
 
+/* Кнопка закриття */
 .video-close {
   position: absolute;
-  top: -45px;
+  top: -50px; /* Виносимо над вікном */
   right: 0;
-  font-size: 36px;
-  color: white;
+  font-size: 45px;
+  line-height: 1;
+  color: #fff;
   cursor: pointer;
+  transition:
+    transform 0.3s,
+    color 0.3s;
 }
 
-.video-pagination {
-  margin-top: 20px;
+.video-close:hover {
+  color: #ff6f61; /* Колір як у вашого слогану */
+  transform: rotate(90deg);
+}
+
+/* Вікно статті */
+.modal-content-article {
+  position: relative;
+  background-color: #fff;
+  margin: 5vh auto;
+  width: 92%;
+  max-width: 850px;
+  border-radius: 20px;
+  overflow: hidden; /* Критично для закруглених кутів */
+  max-height: 85vh;
   display: flex;
-  gap: 16px;
-  justify-content: center;
+  flex-direction: column;
+}
+
+/* Єдиний контейнер для прокрутки */
+.modal-scroll-container {
+  flex: 1; /* Займає весь простір, що залишився */
+  overflow-y: auto !important; /* ВКЛЮЧАЄМО СКРОЛ ТУТ */
+  display: block;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #ffb800 #f1f1f1;
+}
+
+.modal-scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+.modal-scroll-container::-webkit-scrollbar-thumb {
+  background: #ffb800;
+  border-radius: 10px;
+}
+
+/* Картинка */
+.modal-article-img {
+  width: 100%;
+  height: 250px; /* Зробив трохи вищою, щоб було куди заходити тексту */
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Кнопка закриття */
+.close-article-top {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  font-size: 32px;
+  line-height: 1;
+  color: #333;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.video-pagination button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+.close-article-top:hover {
+  background: #ff6b6b;
+  color: white;
+  transform: scale(1.1);
 }
 
-/* Адаптивність (Media Queries) */
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    padding: 10px 0;
-  }
+/* Обгортка тексту з негативним маржином */
+.article-text-wrapper {
+  padding: 0 30px 30px 30px;
+  position: relative;
+}
 
-  #main-nav ul {
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-  }
+/* Заголовок, що заходить на картинку */
+.modal-article-title {
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 15px;
+  margin-top: -40px; /* Ось цей ефект "під текст" */
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.08);
+  z-index: 5;
+  color: #2c3e50;
+  font-size: 24px;
+}
 
-  #main-nav ul li {
-    margin: 5px 0;
-    border-bottom: 1px dashed #eee;
-    padding-bottom: 5px;
-  }
+/* Оформлення тексту всередині */
+#articleBody h3 {
+  color: #2c3e50;
+  margin-top: 25px;
+  border-left: 4px solid #ff6b6b;
+  padding-left: 15px;
+}
 
-  .language-switcher {
-    margin-top: 10px;
-  }
-
-  /* Зменшення шрифтів */
-  .slogan {
-    font-size: 1.5em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-  }
-
-  /* Блоки в один стовпець */
-  #online-lessons .block {
-    flex: 1 1 100%;
-  }
+#articleBody p {
+  line-height: 1.7;
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 15px;
+  text-align: justify;
 }
